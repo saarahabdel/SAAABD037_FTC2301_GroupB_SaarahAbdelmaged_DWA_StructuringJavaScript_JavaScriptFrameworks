@@ -1,0 +1,122 @@
+Recommended Books: 
+- How to Speak Machine : John Maeda
+- Clean Architecture : Robert C Martin
+- Clean Code : Robert C Martin 
+- Eloquent JavaScript : Marjin Haverbeke 
+
+
+Introduction
+
+Reflecting on JavaScript Fundamentals
+
+Getting from fundamentals to full-on software
+
+Scale complexity incrementally by using composition
+
+Importance of mid-level code structures
+
+Comparing JavaScript to rocket science
+
+Thinking about software as workable material
+
+Software often fails catastrophically
+
+Programming requires patience regardless of skill
+
+First ever recorded computer bug in history
+
+It is impossible to create bug-free code
+
+Mid-level bugs are much harder to find and fix
+
+Getting code to work is the easy part
+
+Keep the focus on what is really hard in programming
+
+We can only equip you to walk this journey
+
+Talking about your career path
+
+Fundamentals is not enough
+
+Strive towards thinking about architecture
+
+Understand both fundamentals and architecture
+
+Building a programming career takes a long time
+
+Programming is complex, scary and frustrating
+
+* Extreme focus on precision and accuracy
+- small errors catastrophic 
+- manage complexity
+
+* Overwhelming amount of moving parts and people
+- cross functional 
+- different people specialise in different areas
+
+* Should write that is readable by other people
+- different people will be reading your code over a long period of time
+
+* Software has an extremely long lifecycle
+- work with code that's been around for a long time
+- your code fits into a bigger picture
+
+* Introducing four stories to illustrate concepts
+
+* First example: Ariane 5 Rocket Incident
+- 1996
+- next generation rocket for European Union 
+- launched in France
+- 40s after lift off it exploded 
+- issue came from SRI - internal reference system
+- took code from previous rocket and modified it
+
+* Very rare for codebases to be rewritten entirely
+
+* Problem was caused by automatic coercion of a value
+- similar from number to string 
+- 64bit value got coerced into 16bit value 
+
+* What Ariane 5 code might have looked like
+
+* Hidden bugs more dangerous than obvious bugs
+- eg. something accidently gets coerced 
+
+* Second example: Mars Climate Orbiter
+- sattelite built by NASA launched in 1998
+- meant to survey the climate and atmosphere on Mars 
+- launched correctly then disappeared off the radar, no one knows what happened 
+
+* Problem was an incorrect assumption about the code
+- they figured the problem
+- two ways to measure thrust (how much force applied to move sattelite in certain direction)
+- one way by pounds, the other by newtons 
+- at some point a value was parsed and it shouldve been newtons not pounds
+
+* What code might have looked like
+
+* Real-world use of AI in day-to-day coding
+- CoPilot is ChatGPT in VsCode 
+
+* Third example: Knight Capital Incident
+- made software that automated the buying and selling of stock
+- company bankrupted in a single day (in 45 minutes)
+- important to test your software 
+
+* Fourth example: Facebook DNS Incident
+- 4 October 2021
+- Whatsapp and Facebook wentb down for 6 hours
+- tested the DNS which caused it to shut down  
+- DNS is the address for the thing youre looking for 
+
+* Not obvious how complex maintaining software is
+
+* It is impossible to build fail-proof software
+
+* Even when less severe, there are still implications
+
+* Getting confused by your own code
+
+* Complexity is the most critical problem in coding
+- keeping programs under control is the main problem of programming 

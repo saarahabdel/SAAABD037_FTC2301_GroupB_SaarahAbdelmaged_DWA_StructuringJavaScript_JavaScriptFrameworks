@@ -1,0 +1,96 @@
+
+00:00:00 Revisiting Mars Climate Orbiter code
+
+00:00:30 Concept of code style and style guides
+
+00:01:00 JavaScript Standard Styleguide
+
+00:01:40 The Airbnb Styleguide
+
+00:02:30 Find the JS one, not the React/JSX one
+
+00:02:50 Example of function-related styles
+
+00:03:40 Even if disagree, style guides are invaluable
+
+00:04:00 Example of variable-related styles
+
+00:04:30 How do you name variables and functions
+
+00:05:00 Ensure variables visually look different at a glance
+
+00:06:20 Include extra information in variable names
+
+00:07:30 Avoid vague or ambiguous variable names
+
+00:08:00 Ensure all related code is grouped together
+
+00:08:30 Attempt to have code readable as plain English
+
+00:09:00 Use upper snake case for global constants
+
+00:09:30 Aim for expressiveness even if the code is longer
+
+00:10:00 Ensuring data is correct before running
+
+00:10:30 Group related data together in object literals
+
+00:11:10 Passing single object or multiple arguments
+
+00:12:00 Add checks to prevent code from running
+
+00:12:30 How strict checks depend on context
+
+00:14:00 Example of attempting run with wrong data
+
+00:14:30 With experience it is easier to gauge strictness
+
+00:15:00 Preventing incorrect code from running
+
+00:16:00 Comments to provide additional context
+
+00:17:00 Describing the props shape with JSDoc
+
+00:17:30 Use dot notation to indicate nested values
+
+00:18:40 Quotes in JSDoc to indicate literal values
+
+00:19:30 Including auto-conversion in our function
+
+00:20:00 Object properties are also more readable
+
+00:22:00 Checking if the value is one of the possible outcomes
+
+00:23:00 Scale strictness with the importance of operation
+
+00:23:50 Reviewing and recapping changes to code
+
+00:24:20 Using code styles to increase readability
+
+00:25:00 Describing shapes and behaviour with JSDoc
+
+00:25:40 Aiming for modularity and flexibility of code
+
+00:27:10 Introducing the idea of abstraction
+
+00:27:30 Abstraction at the core of managing complexity
+
+00:28:00 Abstraction and composition are used together
+
+00:28:40 Only expose what is needed from the abstraction
+
+00:30:00 Abstractions make use of interfaces
+
+00:30:30 Unable to avoid complexity in software
+
+00:31:00 Complexity due to evolving requirements
+
+00:31:30 Managing your technical debt
+
+00:32:20 Code changes as software scales
+
+00:33:00 Developers spend time maintaining software
+
+00:34:00 Introducing programming paradigms
+
+00:34:00 Introducing JavaScript frameworks
