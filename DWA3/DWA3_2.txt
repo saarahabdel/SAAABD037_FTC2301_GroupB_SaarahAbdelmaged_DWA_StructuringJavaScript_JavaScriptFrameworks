@@ -1,0 +1,23 @@
+-- lots of value in writing your documentation before writing your code 
+-- add code blocks to figjam files 
+
+> UUID - Universal Unique Identifier
+-- check video at 6:20
+
+> JSDoc 
+-- @param / @returns   These relate to functions 
+-- @ts-check           VsCode will check your code (prevent errors and spelling mistakes)
+-- @type 
+
+-- eg.
+@param {number}
+@param {number} [num2] - square brackets indicate parameter is optional
+
+-- @typedef 
+-- allows you to create your own custom types 
+-- eg.
+@typedef {'Cape Town' | 'Johannesburg'} Location
+-- most often used to create objects 
+
+
+REST OF NOTES IN SCRIPT.JS FILE
