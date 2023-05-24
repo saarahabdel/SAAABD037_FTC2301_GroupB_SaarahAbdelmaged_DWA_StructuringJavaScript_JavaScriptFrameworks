@@ -1,0 +1,45 @@
+> Instructions can be given to developers in different ways
+-- can be organised or disoraginsed 
+-- user stories state what the user requires and why, user stories are not always given but they are ideal
+
+
+> What is the ".md" file extension?
+-- all repos should have readme's 
+-- there are repos that are just readme files 
+--- an example would be awesomelists, they have lots of useful resources for specific things
+
+-- markdown has its own specific syntax
+-- usually starts with a heading
+-- then an introductory paragraph to give a bit of context
+-- you can also list what you've written in the intro paragraph as an actual list under the paragraph
+
+-- You can then have a 'getting started' section 
+--- mention what one would need such as an IDE like VsCode, basic HTML, CSS and JavaScript skill and a browser like Chrome
+--- you can also add links to these requirements, like links to chrome or what HTML is 
+
+-- " # " This would be a level one heading 
+-- " - " give bulletpoints 
+-- to make a link:  [Visual Studio Code](https://code.visualstudio.com) 
+-- can also add code snippets by using 3 backticks " ``` "
+
+-- Markdown All in One extension is useful to see the preview of how your md file would look on GitHub
+
+> Unified Modeling Language (UML)
+-- expressing logic in programming in terms of a diagram 
+-- it is structured and has its own set of rules 
+
+> Mermaid 
+-- express code through diagrams
+
+> FigJam (Check from 28:40 in DWA3 Video 1)
+-- use to brainstorm how to represent user stories on the application
+-- use to work through the logic 
+-- very cryptic so you can work quickly as your ideas come to mind
+
+
+
+
+
+    
+
+
