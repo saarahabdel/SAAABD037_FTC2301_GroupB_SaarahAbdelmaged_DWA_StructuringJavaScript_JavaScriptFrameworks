@@ -1,7 +1,48 @@
-/**
- * @type {string} - An array conatining the months of the year
- */
+// @ts-check
 
+/**
+   * @typedef {Object} response
+   * @property {string} requestType
+   * @property {string} requestBy
+   * @property {string} forDisplay
+   * @property {Object} data
+   */
+
+  /**
+   * @typedef {Object} data
+   * @property {Object} NM372
+   * @property {Object} SV782
+   * 
+   */
+
+  /**
+   * @typedef {Object} NM372
+   * @property {string} firstName
+   * @property {string} surname
+   * @property {string} id
+   * @property {array} races
+   */
+
+  /**
+   * @typedef {Object} SV782
+   * @property {string} firstName
+   * @property {string} surname
+   * @property {string} id
+   * @property {array} races
+   */
+
+  /**
+   * @typedef {array} races 
+   * @property {Date} date 
+   * @property {Object} time
+   */
+
+
+
+/**
+ * @type {array} - An array containing the months of the year.
+ * @property {string} - Each month of the year is a string.
+ */
 const MONTHS = [
     'Jan',
     'Feb',
@@ -16,10 +57,13 @@ const MONTHS = [
     'Nov',
     'Dec',
   ]
-  /**
-   * @type {object} 
-   */
-  const data = {
+  
+
+/**
+ * @type {Object} Data
+ * @property {Object} response 
+ */  
+  const Data = {
     response: {
       requestType: "FETCH_ATHLETE_DATA",
       requestBy: "ALL_MATCHING_ATHLETES",
@@ -71,26 +115,32 @@ const MONTHS = [
   
   // Only edit below this comment
   
+/**
+ * Creates an HTML fragment for an athlete.
+ * @param {string} athlete - The athlete's ID.
+ * @returns {DocumentFragment} The HTML fragment.
+ * 
+ */
   const createHtml = (athlete) => {
-      const { firstName, surname, id, races } = data.response.data[athlete]
+      const { firstName, surname, id, races } = Data.response.data[athlete]
       races.reverse()
-      const date = new Date(races[0].date) //created new date
+      const date = new Date(races[0].date)
       const time = races[0].time
   
       const fragment = document.createDocumentFragment();
   
-      const title = document.createElement("h2"); //h2 in inverted commmas
+      const title = document.createElement("h2"); 
   
-      title.textContent = data.response.data[athlete].id
+      title.textContent = Data.response.data[athlete].id
   
       fragment.appendChild(title);
   
-      const list = document.createElement("dl"); //dl in inverted commas
+      const list = document.createElement("dl"); 
     
   
       const day = date.getDate();
       const month = date.toLocaleString("en-US", { month: "short"} )
-      const year = date.getFullYear(); //used correct syntax: .getFullYear() instead of .year
+      const year = date.getFullYear(); 
   
       const [first, second, third, fourth] = time; //destructuring expression
       let total = first + second + third + fourth;
@@ -123,7 +173,15 @@ const MONTHS = [
       return fragment
   }
   
-  const { NM372: { id: NM372}, SV782: { id: SV782 } } = data.response.data
+  // const { NM372: { id: NM372}, SV782: { id: SV782 } } = Data.response.data
   
-  document.querySelector('[data-athlete="NM372"]').appendChild(createHtml(NM372));
-  document.querySelector('[data-athlete="SV782"]').appendChild(createHtml(SV782));
+  // document.querySelector('[data-athlete="NM372"]').appendChild(createHtml(NM372));
+  // document.querySelector('[data-athlete="SV782"]').appendChild(createHtml(SV782));
+
+  const NM372 = document.querySelector('section[data-athlete="NM372"]')
+  const SV782 = document.querySelector('section[data-athlete="SV782"]')
+
+  NM372?.appendChild(createHtml('NM372'));
+  SV782?.appendChild(createHtml('SV782'));
+  
+
