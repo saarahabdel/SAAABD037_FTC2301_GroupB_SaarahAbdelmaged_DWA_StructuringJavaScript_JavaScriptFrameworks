@@ -1,0 +1,48 @@
+Recommended Books:
+- The Element of style
+
+CODE STYLES / STYLE GUIDES 
+
+- with all functional things there is style in the manner its presented
+- style determines how you experience something 
+- human language style guides go far back and similar concepts can be applied to computer
+languages 
+- stylistic predictability aids in reading and understanding
+- forcing a style guide results in fewer bugs 
+- JavaScript has the highest ranking in benefits from Style Guides 
+- Code style is critical in JavaScript code 
+- Projects that stick to a specific style of coding result in about 15% less bugs 
+
+What is Code Style?
+> identation
+- JavaScript compilers dont care for line breaks and indentation 
+- minified code are single lines of JavaScript (no indentation/line breaks)
+- indentation helps the viewer see the relationship between things at a glance 
+
+> To use space or tabs? Subjective
+- space leaves dot characters
+- spaces are hard coded
+- tabs leaves arrow characters
+- tabs are dynamic (your code editor controls how big the character is)
+
+> Line Length
+- different programming languages have a tendency for longer or shorter lines
+
+> White Space 
+- eg. console.log( 'Hello' ) OR console.log('Hello')
+- for eg. according to Airbnb styleguide, have spaces around the brackets when destructing
+const [ one, two, three ] = array
+
+> Naming Conventions 
+- more often than not is speaks to which casing you use 
+- most popular: snake_case, kebab-case, camelCase(JS Variables & Functions), PascalCase(JS Classes), SCREAMING_SNAKE_CASE(JS Constants)
+
+> Comments
+- try not to overly comment 
+
+
+
+
+
+
+
