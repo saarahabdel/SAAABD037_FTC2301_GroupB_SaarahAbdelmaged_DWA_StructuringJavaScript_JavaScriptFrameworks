@@ -1,0 +1,18 @@
+> There is a difference between Bugs and Errors 
+
+- bugs arent necessarily good or bad 
+- bugs are unintended effects, things we dont foresee 
+- eg. a bug that created the creeper in MineCraft
+
+
+- eg. its much better for someones banking app to crash and exit rather than allowing it to function in 
+an unsafe state which might allow them to transfer money incorrectly
+- thats why we appreciate errors to prevent unsafe states 
+
+> Therac 25
+- cancer treatment machine, meant to replace the previous model (Therac 24)
+- machine started throwing errors but never explained what they were, also allowed
+them to be dismissed and continue using the machine 
+- race condition in the software resulted in an unsafe state which resulted in high 
+doses of radiation 
+- example on procing why its dangerous to avoid errors.
