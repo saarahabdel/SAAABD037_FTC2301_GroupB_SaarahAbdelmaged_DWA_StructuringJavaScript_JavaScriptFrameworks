@@ -33,6 +33,8 @@ the style guide in your code
 - then came 'JS Hint'
 - ESLint we'll primarily use 
 
+@21:15 Installing and Setting up Node.js up until end of video (need help with setup)
+
 
 
 
