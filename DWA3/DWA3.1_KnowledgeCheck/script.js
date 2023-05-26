@@ -172,11 +172,6 @@ const MONTHS = [
       fragment.appendChild(list);
       return fragment
   }
-  
-  // const { NM372: { id: NM372}, SV782: { id: SV782 } } = Data.response.data
-  
-  // document.querySelector('[data-athlete="NM372"]').appendChild(createHtml(NM372));
-  // document.querySelector('[data-athlete="SV782"]').appendChild(createHtml(SV782));
 
   const NM372 = document.querySelector('section[data-athlete="NM372"]')
   const SV782 = document.querySelector('section[data-athlete="SV782"]')

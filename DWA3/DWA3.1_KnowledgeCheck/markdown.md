@@ -2,6 +2,27 @@
 <hr>
 <br>
 
+## Table of Contents
+- [What this code consists of:](#what-this-code-consists-of)
+- [Requirements](#Requirements)
+- [Getting Started](#getting-started)
+
+## Requirements
+- Basic [HTML, CSS and JavaScript](https://developer.mozilla.org/en-US/docs/Learn) skills.
+- An IDE like [Visual Studio Code](https://code.visualstudio.com/) or [Netbeans](https://netbeans.apache.org/)
+- A web browser like [Chrome](https://www.google.com/chrome/)
+
+
+## Getting Started 
+- Clone this Repository 
+- Run localhost server
+- Open index.html and script.js
+
+<br>
+<hr>
+<br>
+
+  
 ## What this code consists of:
 <br>
 
