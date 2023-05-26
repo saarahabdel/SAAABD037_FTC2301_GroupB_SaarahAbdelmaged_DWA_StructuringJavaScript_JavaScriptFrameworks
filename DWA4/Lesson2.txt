@@ -1,0 +1,43 @@
+STYLE GUIDES 
+
+- first style guide made in 1974 by Brian W. Kernighan (The Elements of Programming Style)
+
+> Three Types of Style Guides 
+1) Officially Endorsed 
+PEP8 in Python 
+Oracle Java Code Conventions
+
+2) Third Party Style Guide
+Google Java Style guide 
+Company Maintained - Company uses a language extensively so had to develop a guide for their own engineers
+Ruby third party style guides
+
+3) Community Driven Style Guides 
+
+> Style Guides we wont be using:
+- jQuery Core Style Guide --- assume use of jQuery (outdated library)
+- idiomatic.js  --- general guidelines, not testable (no clear yes or no answers)
+- MDN JavaScript guidelines --- general guidelines, not testable
+
+- ESLint Recommended Rules (we'll use to some degree) --- focused on catching errors
+
+> JavaScript Style Guides
+- standard JS (community driven)
+- google JavaScript Style Guide 
+- Airbnb JavaScript Style Guide (Best one to use)
+
+> What is Linting?
+- linting tools highlights the 'fluff' that impedes readability or doesn't fit
+the style guide in your code
+- first lint was 'JS Lint' 
+- then came 'JS Hint'
+- ESLint we'll primarily use 
+
+
+
+
+
+
+
+
+
