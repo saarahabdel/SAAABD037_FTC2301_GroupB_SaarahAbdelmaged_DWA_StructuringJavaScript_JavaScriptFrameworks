@@ -1,0 +1,45 @@
+> What is a Race Condition?
+- undesirable situation that occurs when a device/system attempts to perform two or more
+operations at the same time.
+- occurs when two threads access as shared variable at the same time 
+
+- errors bubble up through the scope in our JavaScript 
+
+> Race Condition Example:
+- Horses running towards a finish line, you have lanes. Each horse will get to the finish
+line at different times 
+- By the time the race gets run the order in which they end up will be different every time
+
+> What happened in Therac-25
+- changing from the one mode to the other was a race condition
+
+- one button to set to one mode 
+- another button to set to other mode 
+
+- changing the intensity was instantaneous 
+
+- Three steps occur:
+-- Change from one mode to the other 
+-- Accordingly you change the intensity 
+-- Administer the treatment 
+
+- By the time your administering, the modes might still be in the process of changing
+- Bc of this you might administer a high dosage for the incorrect mode (since modes
+still in process of changing)
+
+> How could we have fixed this?
+- easiest way would be to lock it 
+(See script.js)
+
+> Best case for throwing errors 
+- in a case where you expect something to never happen but you want to put
+a signal for yourself bc when this happens you want to know,
+bc the implications of it happening is massive.
+- throwing the occurence as an error helps a ton because it unwinds 
+the entire call stack and if its not catched anywhere every level of 
+the scope stops working 
+- errors bubble up through the scope in our JavaScript 
+
+> How do you prevent errors from unwinding the entire stack?
+- wrap the scope in something called a try catch 
+
