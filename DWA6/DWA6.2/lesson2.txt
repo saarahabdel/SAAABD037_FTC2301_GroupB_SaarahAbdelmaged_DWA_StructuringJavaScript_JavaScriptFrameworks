@@ -1,0 +1,30 @@
+ABSTRACTION AS A CONCEPT 
+
+- where low and high level ideas meet
+
+> Low Level Elements 
+- variables 
+- functions
+- loops
+- if statements
+- etc
+
+> High Level Elements
+- managing complexity 
+- errors and debugging
+- comments
+- code style
+
+> Abstraction 
+- exmaple: do fish know they're wet (a book)
+- example: 1+1=2 (never questioned it but it is a thing)
+- example: E=mc^2 , Pi, sin, cos, tan
+- all of those above allow us to express complex things in a simple manner
+- abstraction hides the details and give us the ability to talk about problems
+at a higher (or more abstract) level
+
+> Chunking
+- our brain only has the ability to look at a range of things to a certain degree
+- our brain has the ability to split things into chunks in order to make sense of them
+- example: spaces in phone numbers
+

@@ -1,0 +1,3 @@
+ABSTRACTION
+
+> Need to combine low-level with high-level concepts
