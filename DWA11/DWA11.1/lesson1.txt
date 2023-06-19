@@ -1,0 +1,14 @@
+FUNCTIONAL PROGRAMMING
+- treats functions as your primary abstraction
+- side effects are not allowed 
+
+- all 3 types of programming are concerned with how we do abstractions
+
+
+Procedural Programming: Functions as Nestable Instructions
+- treats your main abstraction as nestable instructions
+
+OOP: Objects that contain both data and behavior
+- treats your primary abstraction(object) as your primary instruction
+
+stopped at 7:21
