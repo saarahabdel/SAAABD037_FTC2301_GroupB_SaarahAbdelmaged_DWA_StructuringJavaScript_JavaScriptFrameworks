@@ -74,7 +74,7 @@ export const addTask = (props) => {
 /**
  * @returns {ToggleAdd}
  */
-export const toggleTask = () => ({ type: "TOGGLE_ADD" });
+export const toggleAdd = () => ({ type: "TOGGLE_ADD" });
 
 /**
  * @param {object} props 

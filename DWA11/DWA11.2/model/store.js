@@ -45,21 +45,26 @@ export const State ={};
  */
 
 /**
- * @callback Subscribe
+ * @callback Subscription
  * @param {State} prev
  * @param {State} next 
- * @return {EmptyFn}
  */
 
 /**
- * @type {Array<Subscribe>}
+ * @type {Array<Subscription>}
  */
-const subscribers = [] 
+let subscribers = [] 
 
 /**
  * @type {Array<State>}
  */
-const states = []
+const states = [{
+    phase: 'idle',
+    tasks: {},
+    filters: {
+        sorting: 'A-Z',
+    },  
+}];   // this is the starting state
 
 /**
  * @return {State}
@@ -73,15 +78,33 @@ export const getState = () => {
 /**
  * @param {Action} action 
  */
-export const dispatch = () => {
+export const dispatch = (action) => {
     const prev = getState()       // gets the current store
-    const next = reducer 
+    const next = reducer(prev, action);
 
-} // 
+    // trigger the subscriptions as well:
+    subscribers.forEach((item) => item(prev, next))
+    states.unshift(next);
+
+} // we run our reducer on that state
 
 /**
- * @typedef {object} Store 
- * @prop {GetState} getState
- * @prop {Subscribe} subscribe
- * @prop {Dispatch} dispatch 
+ * @param {Subscription} subscription
  */
+export const subscribe = (subscription) => {
+    subscribers.push(subscription)
+    const handler = (item) => item !== subscription
+    // gets the current item in the array
+
+    const unsubscribe = () => {
+        const newSubscribers = subscribers.filter(handler)
+        subscribers = newSubscribers
+    }  
+    // maps over the current subscribers
+    // anything that resolves to true when you call filter it keeps it
+    // if its false it removes it
+
+    return unsubscribe
+}
+
+
