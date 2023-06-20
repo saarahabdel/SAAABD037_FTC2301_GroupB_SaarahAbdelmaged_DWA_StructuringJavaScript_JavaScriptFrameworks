@@ -1,6 +1,10 @@
 FUNCTIONAL PROGRAMMING
 - treats functions as your primary abstraction
 - side effects are not allowed 
+- a function cant change anything outside of itself
+- bulk of your code should have no side effects
+- use for asynchronous functions
+
 
 - all 3 types of programming are concerned with how we do abstractions
 
@@ -10,5 +14,38 @@ Procedural Programming: Functions as Nestable Instructions
 
 OOP: Objects that contain both data and behavior
 - treats your primary abstraction(object) as your primary instruction
+- generally results in bigger file sizes and more code, especially when it
+comes to third party libraries 
+- use for anything with the DOM
 
-stopped at 7:21
+
+
+PROTOTYPES 
+- Prototypes allowed us to extend things by using very little memory
+- It was introduced at a time when memory usage was a huge issue 
+
+
+DESIGN PATTERNS
+- good to understand design patterns 
+- shouldn't implement them directly as is 
+
+- we'll be drawing inspiration from the observer pattern
+- things can listen to the store 
+- the store will let it know when the store itself changes
+- you subscribe to the store from somewhere in your code and when the store changes 
+you get an alert that the store has changed and this is the new state of the store 
+- that is how you handle your side effects in a lot of JavaScript projects
+
+Examples:
+- Redux was created for React 
+- Pinia was created for Vue 
+- Svelte has a built in way to create Stores (counter example on the website!!)
+
+
+SUBSCRIBERS 
+- works nicely with functional programming bc you dont mutate the store directly
+- you keep a copy of the old store 
+- you can provide both the previous and the next store on a subsription event
+
+
+
