@@ -1,0 +1,75 @@
+HOW DOES REDUX WORK?
+- state is hard to manage in most modern apps bc
+- we try to manage mutation and asynchrony at once 
+
+separation of concerns:
+- you need to create a solution for how data gets rendered but you also
+need a secondary solution that manages what is the actual state and data 
+- data is uni directional in functional programming 
+
+- bc we can only update the store via actions, we just listen what actions
+are submitted and there we can infer what action caused the store to actually 
+change 
+- once the action arrives at the store , the way the new store is 
+calculated is something called a PR Function (A function that doesnt have 
+side effec)
+
+
+It has the:
+- Store 
+- Actions
+- Reducer 
+
+eg. Store 
+{
+  todos: [{
+    text: 'Eat food',
+    completed: true
+  }, {
+    text: 'Exercise',
+    completed: false
+  }],
+  visibilityFilter: 'SHOW_COMPLETED'
+}
+
+eg. Actions 
+{ type: 'ADD_TODO', payload: { text: 'Go to swimming pool' } }
+{ type: 'TOGGLE_TODO', index: 1 }
+{ type: 'SET_VISIBILITY_FILTER', filter: 'SHOW_ALL' }
+
+eg. Reducer 
+function visibilityFilter(state = 'SHOW_ALL', action) {
+  if (action.type === 'SET_VISIBILITY_FILTER') {
+    return action.filter
+  } else {
+    return state
+  }
+}
+
+function todos(state = [], action) {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return state.concat([{ text: action.text, completed: false }])
+    case 'TOGGLE_TODO':
+      return state.map((todo, index) =>
+        action.index === index
+          ? { text: todo.text, completed: !todo.completed }
+          : todo
+      )
+    default:
+      return state
+  }
+}
+
+- Reducer takes the action and the store, then combines it into a new
+store and adds it to the main store 
+
+
+
+
+ACTIONS VS ACTION CREATORS 
+- The action itself is always an object 
+- The action creators create the object for you
+(It would be a pain to create the entire acton everytime, so
+you create a function that does that action for you)
+
