@@ -19,6 +19,8 @@
  * @prop {Urgency} urgency - A user specified indication of how important the task
  */
 
+export const Task = {};
+
 /**
  * @typedef {object} Filters - User configured filter values that control what tasks are shown.
  * @prop {string} search - A freeform string of characters that is matched against a task title.
